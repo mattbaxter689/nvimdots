@@ -60,5 +60,10 @@ require("catppuccin").setup({
 
 -- vim.cmd.colorscheme "catppuccin"
 -- vim.cmd.colorscheme "everforest"
+-- vim.cmd.colorscheme "carbonfox"
+-- vim.cmd.colorscheme "duskfox"
 vim.cmd.colorscheme "oh-lucy-evening"
 
+
+-- Adding custom color randomizer function here
+-- follow from the primeagen example with colourmypencils
