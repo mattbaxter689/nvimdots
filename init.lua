@@ -1,1 +1,4 @@
-require("baxter")
+require("remap")
+require("set")
+
+require("plugins")
