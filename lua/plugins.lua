@@ -99,7 +99,7 @@ local plugins = {
     },
 
     { "neanias/everforest-nvim",
-        priority = 1000,
+        -- priority = 1000,
         config = require("plug_conf.colors").everforest,
     },
 
@@ -109,6 +109,11 @@ local plugins = {
         config = function()
             require("catppuccin").setup()
         end
+    },
+    {
+        'sam4llis/nvim-tundra',
+        config = require("plug_conf.colors").tundra,
+        priority = 1000
     },
 
     -- For transparent background

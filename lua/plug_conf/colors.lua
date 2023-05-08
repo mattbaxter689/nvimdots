@@ -7,7 +7,7 @@ function M.everforest()
         -- transparent_background_level = 1
     })
 
-    vim.cmd('colorscheme everforest')
+    -- vim.cmd('colorscheme everforest')
 end
 
 
@@ -47,6 +47,13 @@ function M.catppuccin()
         },
     })
 end
+
+function M.tundra()
+    require("nvim-tundra").setup()
+    vim.cmd('colorscheme tundra')
+end
+
+-- add nightfox here
 
 return M
 
