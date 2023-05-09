@@ -69,6 +69,12 @@ cmp.setup({
             maxwidth = 50,
         })
     },
+    window = {
+        completion = {
+            border = "rounded",
+            side_padding = 0,
+        }
+    }
 
 })
 
