@@ -82,6 +82,7 @@ local plugins = {
             { 'saadparwaiz1/cmp_luasnip' },
             { 'hrsh7th/cmp-nvim-lsp' },
             { 'hrsh7th/cmp-nvim-lua' },
+            { 'onsails/lspkind.nvim' },
 
             -- Snippets
             { 'L3MON4D3/LuaSnip' },
@@ -102,7 +103,18 @@ local plugins = {
         -- priority = 1000,
         config = require("plug_conf.colors").everforest,
     },
-
+    {
+        'Yazeed1s/oh-lucy.nvim',
+        -- priority = 1000,
+        -- config = function()
+        --     vim.cmd('colorscheme oh-lucy-evening')
+        -- end
+    },
+    {
+        "rebelot/kanagawa.nvim",
+        priority = 1000,
+        config = require("plug_conf.colors").kanagawa
+    },
     {
         "catppuccin/nvim",
         as = "catppuccin",

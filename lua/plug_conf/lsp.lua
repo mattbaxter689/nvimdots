@@ -17,7 +17,9 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
   ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
   ['<CR>'] = cmp.mapping.confirm({ select = true }), --[[ <C-Space> also works well! ]]
-  ["<C-y>"] = cmp.mapping.complete(),
+  ["<C-y>"] = cmp.mapping(cmp.mapping.complete({
+      reason = cmp.ContextReason.Auto,
+  }), {"i", "c"}),
   ["<C-d>"] = cmp.mapping.scroll_docs(-4),
   ["<C-u>"] = cmp.mapping.scroll_docs(4),
 })
@@ -58,4 +60,16 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+local lspkind = require("lspkind")
+cmp.setup({
+    formatting = {
+        format = lspkind.cmp_format({
+            mode = "symbol_text",
+            maxwidth = 50,
+        })
+    },
+
+})
+
 

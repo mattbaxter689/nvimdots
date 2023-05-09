@@ -4,12 +4,20 @@ function M.everforest()
     require("everforest").setup({
         background = "hard",
         disable_italic_comments = true,
+        -- vim.cmd('colorscheme everforest')
         -- transparent_background_level = 1
     })
 
     -- vim.cmd('colorscheme everforest')
 end
 
+function M.kanagawa()
+    require("kanagawa").setup({
+        theme = 'wave'
+    })
+
+    vim.cmd('colorscheme kanagawa')
+end
 
 function M.catppuccin()
 
@@ -50,7 +58,7 @@ end
 
 function M.tundra()
     require("nvim-tundra").setup()
-    vim.cmd('colorscheme tundra')
+    -- vim.cmd('colorscheme tundra')
 end
 
 -- add nightfox here
