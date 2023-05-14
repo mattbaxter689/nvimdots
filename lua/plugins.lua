@@ -100,7 +100,7 @@ local plugins = {
     },
 
     { "neanias/everforest-nvim",
-        -- priority = 1000,
+        priority = 1000,
         config = require("plug_conf.colors").everforest,
     },
     {
@@ -116,18 +116,33 @@ local plugins = {
         config = require("plug_conf.colors").kanagawa
     },
     {
-        "catppuccin/nvim",
-        as = "catppuccin",
-        config = function()
-            require("catppuccin").setup()
-        end
+        "EdenEast/nightfox.nvim",
+        priority = 1000,
+        config = require("plug_conf.colors").nightfox
     },
     {
-        'sam4llis/nvim-tundra',
-        config = require("plug_conf.colors").tundra,
+        'Everblush/nvim', name = 'everblush',
+        config = require("plug_conf.colors").everblush,
         priority = 1000
     },
-
+    {
+        'frenzyexists/aquarium-vim',
+        priority = 1000,
+        opts = {
+            aqua_bold = 0,
+            aquarium_style = "dark"
+        },
+        config = require("plug_conf.colors").aquarium,
+    },
+    {
+        "catppuccin/nvim", name = "catppuccin",
+        priority = 1000,
+        config = require("plug_conf.colors").catppuccin
+    },
+    {
+        "RRethy/nvim-base16",
+        config = require("plug_conf.colors").ashes,
+    },
     -- For transparent background
     {
         'xiyaowong/transparent.nvim',

@@ -4,7 +4,6 @@ function M.everforest()
     require("everforest").setup({
         background = "hard",
         disable_italic_comments = true,
-        -- vim.cmd('colorscheme everforest')
         -- transparent_background_level = 1
     })
 
@@ -16,52 +15,65 @@ function M.kanagawa()
         theme = 'wave'
     })
 
-    vim.cmd('colorscheme kanagawa')
-end
-
-function M.catppuccin()
-
-    require("catppuccin").setup({
-        color_overrides = {
-            mocha = {
-                rosewater = "#F5E0DC",
-                flamingo = "#F2CDCD",
-                mauve = "#DDB6F2",
-                pink = "#F5C2E7",
-                red = "#F28FAD",
-                maroon = "#E8A2AF",
-                peach = "#F8BD96",
-                yellow = "#FAE3B0",
-                green = "#ABE9B3",
-                blue = "#96CDFB",
-                sky = "#89DCEB",
-                teal = "#B5E8E0",
-                lavender = "#C9CBFF",
-
-                text = "#D9E0EE",
-                subtext1 = "#BAC2DE",
-                subtext0 = "#A6ADC8",
-                overlay2 = "#C3BAC6",
-                overlay1 = "#988BA2",
-                overlay0 = "#6E6C7E",
-                surface2 = "#6E6C7E",
-                surface1 = "#575268",
-                surface0 = "#302D41",
-
-                base = "#1E1E2E",
-                mantle = "#1A1826",
-                crust = "#161320",
-            }
-        },
-    })
-end
-
-function M.tundra()
-    require("nvim-tundra").setup()
-    -- vim.cmd('colorscheme tundra')
+    -- vim.cmd('colorscheme kanagawa')
 end
 
 -- add nightfox here
+function M.nightfox()
+    require("nightfox").setup({
+        option = {
+            module_default = false,
+        },
+        modules = {
+            cmp = true,
+            gitsigns = true,
+            lsp_saga = true,
+            nvimtree = true,
+            telescope = true
+        }
+    })
+
+    -- vim.cmd('colorscheme nightfox')
+end
+
+function M.everblush()
+   require("everblush").setup()
+end
+
+function M.aquarium()
+    -- vim.cmd("colorscheme aquarium")
+end
+
+function M.catppuccin()
+    --[[ require("catppuccin").setup({
+        flavour = "mocha",
+
+    color_overrides = {
+        mocha = {
+          text = "#F4CDE9",
+          subtext1 = "#DEBAD4",
+          subtext0 = "#C8A6BE",
+          overlay2 = "#B293A8",
+          overlay1 = "#9C7F92",
+          overlay0 = "#866C7D",
+          surface2 = "#705867",
+          surface1 = "#5A4551",
+          surface0 = "#44313B",
+
+          base = "#352939",
+          mantle = "#211924",
+          crust = "#1a1016",
+        },
+    },
+  }) ]]
+
+    -- vim.cmd("colorscheme base16-catppuccin")
+end
+
+function M.ashes()
+    vim.cmd("hi NvimTreeWinSeparator guifg=NONE guibg=NONE cterm=NONE ctermbg=NONE ctermfg=NONE")
+    vim.cmd("colorscheme base16-ashes")
+end
 
 return M
 

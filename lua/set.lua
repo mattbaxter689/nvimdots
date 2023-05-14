@@ -20,7 +20,10 @@ vim.g.vimtex_view_method = 'Skim'
 vim.g.autoindent = true
 vim.g.smartindent = true
 
-vim.opt.fillchars:append { eob = " " }
+vim.opt.fillchars = {
+    eob = " ",
+    vert = " "
+}
 
 --enable mouse just in case
 vim.opt.mouse = 'a'

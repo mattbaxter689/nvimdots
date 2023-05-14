@@ -10,7 +10,7 @@ require('bufferline').setup {
 			text_align = "left"
 		}
     },
-    show_buffer_icons = true, 
+    show_buffer_icons = true,
     show_buffer_close_icons = true,
     show_close_icon = true,
     show_tab_indicators = true,
@@ -18,9 +18,10 @@ require('bufferline').setup {
     enforce_regular_tabs = false,
     always_show_bufferline = true,
   }
-} 
+}
 
-vim.api.nvim_set_keymap("n", "[b", ":BufferLineCycleNext<CR>", { noremap = true})
-vim.api.nvim_set_keymap("n", "]b", ":BufferLineCyclePrev<CR>", { noremap = true})
+vim.api.nvim_set_keymap("n", "<Tab>", ":BufferLineCycleNext<CR>", { noremap = true})
+vim.api.nvim_set_keymap("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", { noremap = true})
 vim.api.nvim_set_keymap("n", "mn", ":BufferLineMoveNext<CR>", { noremap = true})
 vim.api.nvim_set_keymap("n", "mp", ":BufferLineMovePrev<CR>", { noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>x", ":bdelete<CR>", { noremap = true})
