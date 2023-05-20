@@ -44,12 +44,6 @@ local plugins = {
         version = "*",
         config = get_setup("toggleterm")
     },
-
-    {
-        'steelsojka/pears.nvim',
-        config = get_setup("pears")
-    },
-
     {
         'numToStr/Comment.nvim',
         config = get_setup("comment")
@@ -66,6 +60,12 @@ local plugins = {
         version = "v3.*",
         dependencies = 'nvim-tree/nvim-web-devicons',
         config = get_setup("bufferline")
+    },
+    {
+        "windwp/nvim-autopairs",
+        config = function()
+            require("nvim-autopairs").setup({})
+        end
     },
     {
         'VonHeikemen/lsp-zero.nvim',
@@ -99,8 +99,11 @@ local plugins = {
         config = get_setup("telescope")
     },
 
-    { "neanias/everforest-nvim",
+    { "sainnhe/everforest",
         priority = 1000,
+        opts = {
+            everforest_background = "hard"
+        },
         config = require("plug_conf.colors").everforest,
     },
     {
@@ -142,6 +145,14 @@ local plugins = {
     {
         "RRethy/nvim-base16",
         config = require("plug_conf.colors").ashes,
+    },
+    {
+        'AlexvZyl/nordic.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require 'nordic' .load()
+        end
     },
     -- For transparent background
     {

@@ -1,11 +1,11 @@
 local M = {}
 
 function M.everforest()
-    require("everforest").setup({
-        background = "hard",
-        disable_italic_comments = true,
-        -- transparent_background_level = 1
-    })
+    -- require("everforest").setup({
+    --     background = "soft",
+    --     disable_italic_comments = true,
+    --     -- transparent_background_level = 1
+    -- })
 
     -- vim.cmd('colorscheme everforest')
 end
@@ -71,8 +71,11 @@ function M.catppuccin()
 end
 
 function M.ashes()
-    vim.cmd("hi NvimTreeWinSeparator guifg=NONE guibg=NONE cterm=NONE ctermbg=NONE ctermfg=NONE")
-    vim.cmd("colorscheme base16-ashes")
+    -- vim.cmd("colorscheme base16-ashes")
+end
+
+function M.nordic()
+    require("nordic").load()
 end
 
 return M

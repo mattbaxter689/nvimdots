@@ -5,7 +5,7 @@ vim.opt.shiftwidth = 4
 vim.opt.smarttab = true
 vim.opt.expandtab = true
 vim.opt.belloff= "all"
-vim.opt.cursorline = false 
+vim.opt.cursorline = false
 vim.opt.wildmenu = true
 vim.opt.syntax = "on"
 vim.opt.textwidth = 80
@@ -24,6 +24,8 @@ vim.opt.fillchars = {
     eob = " ",
     vert = " "
 }
+
+vim.opt.shell = "/usr/local/bin/fish"
 
 --enable mouse just in case
 vim.opt.mouse = 'a'
