@@ -19,6 +19,7 @@ vim.opt.showmode = false
 vim.g.vimtex_view_method = 'Skim'
 vim.g.autoindent = true
 vim.g.smartindent = true
+vim.opt.laststatus=3
 
 vim.opt.fillchars = {
     eob = " ",
