@@ -98,7 +98,7 @@ local plugins = {
         dependencies = { { 'nvim-lua/plenary.nvim' } },
         config = get_setup("telescope")
     },
-
+    -- Colorschemes
     { "sainnhe/everforest",
         priority = 1000,
         opts = {
@@ -124,11 +124,6 @@ local plugins = {
         config = require("plug_conf.colors").nightfox
     },
     {
-        'Everblush/nvim', name = 'everblush',
-        config = require("plug_conf.colors").everblush,
-        priority = 1000
-    },
-    {
         'frenzyexists/aquarium-vim',
         priority = 1000,
         opts = {
@@ -143,15 +138,19 @@ local plugins = {
         config = require("plug_conf.colors").catppuccin
     },
     {
-        "RRethy/nvim-base16",
-        config = require("plug_conf.colors").ashes,
-    },
-    {
         'AlexvZyl/nordic.nvim',
         lazy = false,
         priority = 1000,
         config = function()
-            require 'nordic' .load()
+            -- require 'nordic' .load()
+        end
+    },
+    {
+        'sam4llis/nvim-tundra',
+        priority = 1000,
+        config = function()
+            require("nvim-tundra").setup()
+            -- vim.cmd("colorscheme tundra")
         end
     },
     -- For transparent background
