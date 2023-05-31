@@ -99,38 +99,15 @@ local plugins = {
         config = get_setup("telescope")
     },
     -- Colorschemes
-    { "sainnhe/everforest",
-        priority = 1000,
-        opts = {
-            everforest_background = "hard"
-        },
-        config = require("plug_conf.colors").everforest,
-    },
     {
-        'Yazeed1s/oh-lucy.nvim',
-        -- priority = 1000,
-        -- config = function()
-        --     vim.cmd('colorscheme oh-lucy-evening')
-        -- end
+        "neanias/everforest-nvim",
+        priority = 1000,
+        config = require("plug_conf.colors").everforest,
     },
     {
         "rebelot/kanagawa.nvim",
         priority = 1000,
         config = require("plug_conf.colors").kanagawa
-    },
-    {
-        "EdenEast/nightfox.nvim",
-        priority = 1000,
-        config = require("plug_conf.colors").nightfox
-    },
-    {
-        'frenzyexists/aquarium-vim',
-        priority = 1000,
-        opts = {
-            aqua_bold = 0,
-            aquarium_style = "dark"
-        },
-        config = require("plug_conf.colors").aquarium,
     },
     {
         "catppuccin/nvim", name = "catppuccin",
@@ -148,10 +125,12 @@ local plugins = {
     {
         'sam4llis/nvim-tundra',
         priority = 1000,
-        config = function()
-            require("nvim-tundra").setup()
-            -- vim.cmd("colorscheme tundra")
-        end
+        config = require("plug_conf.colors").tundra
+    },
+    {
+        "EdenEast/nightfox.nvim",
+        priority = 1000,
+        config  = require("plug_conf.colors").nightfox
     },
     -- For transparent background
     {
