@@ -10,17 +10,9 @@ function M.everforest()
     -- vim.cmd('colorscheme everforest')
 end
 
-function M.kanagawa()
-    require("kanagawa").setup({
-        theme = 'wave'
-    })
-
-    -- vim.cmd('colorscheme kanagawa')
-end
-
 function M.catppuccin()
     require("catppuccin").setup({
-        flavour = "mocha",
+        flavour = "macchiato",
         color_overrides = {
 			mocha = {
 				rosewater = "#F5E0DC",
@@ -88,26 +80,30 @@ function M.nordic()
     require("nordic").load()
 end
 
-function M.tundra()
-    require("nvim-tundra").setup({
-        plugins = {
-            lsp = true,
-            treesitter = true,
-            telescope = true,
-            nvimtree = true,
-            cmp = true,
-            context = true,
-            dbui = true,
-            gitsigns = true,
-            neogit = true,
-        }
-    })
-    -- vim.cmd("colorscheme tundra")
+function M.bamboo()
+    require("bamboo").setup({})
+
+    -- vim.cmd("colorscheme bamboo")
+end
+
+function M.nord()
+    require("nord").set()
+
+    vim.cmd("colorscheme nord")
 end
 
 function M.nightfox()
-    require("nightfox").setup({})
-    vim.cmd("colorscheme carbonfox")
+    local specs = {
+        carbonfox = {
+            syntax = {
+                keyword = "pink"
+            }
+        }
+    }
+    require("nightfox").setup({
+        specs = specs
+    })
+    -- vim.cmd("colorscheme carbonfox")
 end
 
 return M

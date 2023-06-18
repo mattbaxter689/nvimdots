@@ -105,9 +105,9 @@ local plugins = {
         config = require("plug_conf.colors").everforest,
     },
     {
-        "rebelot/kanagawa.nvim",
+        'shaunsingh/nord.nvim',
         priority = 1000,
-        config = require("plug_conf.colors").kanagawa
+        config = require("plug_conf.colors").nord,
     },
     {
         "catppuccin/nvim", name = "catppuccin",
@@ -123,9 +123,9 @@ local plugins = {
         end
     },
     {
-        'sam4llis/nvim-tundra',
+        'ribru17/bamboo.nvim',
         priority = 1000,
-        config = require("plug_conf.colors").tundra
+        config = require("plug_conf.colors").bamboo
     },
     {
         "EdenEast/nightfox.nvim",
@@ -141,6 +141,11 @@ local plugins = {
         'lewis6991/gitsigns.nvim',
         config = get_setup("gitsigns")
     },
+    -- For latex in neovim
+    {
+        'lervag/vimtex',
+        config = get_setup("vimtex")
+    }
 }
 
 require("lazy").setup(plugins)
