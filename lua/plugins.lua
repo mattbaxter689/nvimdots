@@ -105,9 +105,9 @@ local plugins = {
         config = require("plug_conf.colors").everforest,
     },
     {
-        'shaunsingh/nord.nvim',
+        'rmehri01/onenord.nvim',
         priority = 1000,
-        config = require("plug_conf.colors").nord,
+        config = require("plug_conf.colors").onenord,
     },
     {
         "catppuccin/nvim", name = "catppuccin",
@@ -123,14 +123,14 @@ local plugins = {
         end
     },
     {
-        'ribru17/bamboo.nvim',
-        priority = 1000,
-        config = require("plug_conf.colors").bamboo
-    },
-    {
         "EdenEast/nightfox.nvim",
         priority = 1000,
         config  = require("plug_conf.colors").nightfox
+    },
+    {
+        'ramojus/mellifluous.nvim',
+        priority = 1000,
+        config = require("plug_conf.colors").mellifluous
     },
     -- For transparent background
     {

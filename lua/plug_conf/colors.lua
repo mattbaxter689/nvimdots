@@ -80,16 +80,18 @@ function M.nordic()
     require("nordic").load()
 end
 
-function M.bamboo()
-    require("bamboo").setup({})
-
-    -- vim.cmd("colorscheme bamboo")
+function M.mellifluous()
+    require("mellifluous").setup({
+        mellifluous = {
+            bg_contrast = 'soft'
+        }
+    })
 end
 
-function M.nord()
-    require("nord").set()
+function M.onenord()
+    require("onenord").setup()
 
-    vim.cmd("colorscheme nord")
+    vim.cmd("colorscheme onenord")
 end
 
 function M.nightfox()
