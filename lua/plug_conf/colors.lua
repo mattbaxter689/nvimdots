@@ -7,7 +7,10 @@ function M.everforest()
         -- transparent_background_level = 1
     })
 
-    -- vim.cmd('colorscheme everforest')
+    vim.cmd('colorscheme everforest')
+    vim.api.nvim_set_hl(0, "NvimTreeNormal", { fg = "#d3c6aa", bg = "#272e33"})
+    vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = "#d3c6aa", bg = "#272e33"})
+
 end
 
 function M.catppuccin()
@@ -80,18 +83,10 @@ function M.nordic()
     require("nordic").load()
 end
 
-function M.mellifluous()
-    require("mellifluous").setup({
-        mellifluous = {
-            bg_contrast = 'soft'
-        }
-    })
-end
-
 function M.onenord()
-    require("onenord").setup()
+    -- require("onenord").setup()
 
-    vim.cmd("colorscheme onenord")
+    -- vim.cmd("colorscheme onenord")
 end
 
 function M.nightfox()

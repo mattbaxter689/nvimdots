@@ -127,11 +127,6 @@ local plugins = {
         priority = 1000,
         config  = require("plug_conf.colors").nightfox
     },
-    {
-        'ramojus/mellifluous.nvim',
-        priority = 1000,
-        config = require("plug_conf.colors").mellifluous
-    },
     -- For transparent background
     {
         'xiyaowong/transparent.nvim',
