@@ -29,10 +29,10 @@ local plugins = {
         config = get_setup("nvimtree")
     },
 
-    {
-        'nvim-lualine/lualine.nvim',
-        config = get_setup("lualine")
-    },
+    -- {
+    --     'nvim-lualine/lualine.nvim',
+    --     config = get_setup("lualine")
+    -- },
 
     {
         "nvim-treesitter/nvim-treesitter",
@@ -140,7 +140,15 @@ local plugins = {
     {
         'lervag/vimtex',
         config = get_setup("vimtex")
-    }
+    },
+    {
+        'freddiehaddad/feline.nvim',
+        config = get_setup("feline")
+    },
+    {
+        'j-hui/fidget.nvim',
+        config = get_setup("fidget")
+    },
 }
 
 require("lazy").setup(plugins)
