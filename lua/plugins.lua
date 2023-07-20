@@ -127,6 +127,11 @@ local plugins = {
         priority = 1000,
         config  = require("plug_conf.colors").nightfox
     },
+    {
+        "Mofiqul/vscode.nvim",
+        priority = 1000,
+        config = require("plug_conf.colors").vscode
+    },
     -- For transparent background
     {
         'xiyaowong/transparent.nvim',

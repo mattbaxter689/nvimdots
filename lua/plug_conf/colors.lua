@@ -7,7 +7,7 @@ function M.everforest()
         -- transparent_background_level = 1
     })
 
-    vim.cmd('colorscheme everforest')
+    -- vim.cmd('colorscheme everforest')
     vim.api.nvim_set_hl(0, "NvimTreeNormal", { fg = "#d3c6aa", bg = "#272e33"})
     vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = "#d3c6aa", bg = "#272e33"})
 
@@ -101,6 +101,18 @@ function M.nightfox()
         specs = specs
     })
     -- vim.cmd("colorscheme carbonfox")
+end
+
+function M.vscode()
+    require("vscode").setup({
+        transparent = false,
+        disable_nvimtree_background = false
+    })
+    require('vscode').load()
+    
+    local c = require('vscode.colors').get_colors()
+    vim.api.nvim_set_hl(0, "NvimTreeNormal", { fg = c.vscFront, bg = c.vscBack})
+    vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = c.vscFront, bg = c.vscBack})
 end
 
 return M
