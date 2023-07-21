@@ -8,8 +8,8 @@ function M.everforest()
     })
 
     -- vim.cmd('colorscheme everforest')
-    vim.api.nvim_set_hl(0, "NvimTreeNormal", { fg = "#d3c6aa", bg = "#272e33"})
-    vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = "#d3c6aa", bg = "#272e33"})
+    -- vim.api.nvim_set_hl(0, "NvimTreeNormal", { fg = "#d3c6aa", bg = "#272e33"})
+    -- vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = "#d3c6aa", bg = "#272e33"})
 
 end
 
@@ -108,11 +108,12 @@ function M.vscode()
         transparent = false,
         disable_nvimtree_background = false
     })
-    require('vscode').load()
     
     local c = require('vscode.colors').get_colors()
     vim.api.nvim_set_hl(0, "NvimTreeNormal", { fg = c.vscFront, bg = c.vscBack})
     vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = c.vscFront, bg = c.vscBack})
+
+    require('vscode').load()
 end
 
 return M
