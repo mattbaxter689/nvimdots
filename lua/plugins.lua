@@ -132,6 +132,11 @@ local plugins = {
         priority = 1000,
         config = require("plug_conf.colors").vscode
     },
+    {
+        "folke/tokyonight.nvim",
+        priority = 1000,
+        config = require("plug_conf.colors").tokyonight
+    },
     -- For transparent background
     {
         'xiyaowong/transparent.nvim',
