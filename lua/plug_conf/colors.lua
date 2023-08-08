@@ -18,35 +18,34 @@ function M.catppuccin()
         flavour = "mocha",
         color_overrides = {
 			-- mocha = {
-			-- 	rosewater = "#F5E0DC",
-			-- 	flamingo = "#F2CDCD",
-			-- 	mauve = "#DDB6F2",
-			-- 	pink = "#F5C2E7",
-			-- 	red = "#F28FAD",
-			-- 	maroon = "#E8A2AF",
-			-- 	peach = "#F8BD96",
-			-- 	yellow = "#FAE3B0",
-			-- 	green = "#ABE9B3",
-			-- 	blue = "#96CDFB",
-			-- 	sky = "#89DCEB",
-			-- 	teal = "#B5E8E0",
-			-- 	lavender = "#C9CBFF",
-			--
-			-- 	text = "#D9E0EE",
-			-- 	subtext1 = "#BAC2DE",
-			-- 	subtext0 = "#A6ADC8",
-			-- 	overlay2 = "#C3BAC6",
-			-- 	overlay1 = "#988BA2",
-			-- 	overlay0 = "#6E6C7E",
-			-- 	surface2 = "#6E6C7E",
-			-- 	surface1 = "#575268",
-			-- 	surface0 = "#302D41",
-			--
-			-- 	base = "#1E1E2E",
-			-- 	mantle = "#1A1826",
-			-- 	crust = "#161320",
-			-- },
-		},
+   --              rosewater = "#ffc9c9",
+   --              flamingo = "#ff9f9a",
+   --              pink = "#ffa9c9",
+   --              mauve = "#df95cf",
+   --              lavender = "#a990c9",
+   --              red = "#ff6960",
+   --              maroon = "#f98080",
+   --              peach = "#f9905f",
+   --              yellow = "#f9bd69",
+   --              green = "#b0d080",
+   --              teal = "#a0dfa0",
+   --              sky = "#a0d0c0",
+   --              sapphire = "#95b9d0",
+   --              blue = "#89a0e0",
+   --              text = "#e0d0b0",
+   --              subtext1 = "#d5c4a1",
+   --              subtext0 = "#bdae93",
+   --              overlay2 = "#928374",
+   --              overlay1 = "#7c6f64",
+   --              overlay0 = "#665c54",
+   --              surface2 = "#504844",
+   --              surface1 = "#3a3634",
+   --              surface0 = "#252525",
+   --              base = "#151515",
+   --              mantle = "#0e0e0e",
+   --              crust = "#080808",
+   --          },
+        },
         integrations = {
             treesitter = true,
             native_lsp = {
@@ -122,6 +121,7 @@ function M.tokyonight()
     })
     -- vim.cmd("colorscheme tokyonight")
 end
+
 return M
 
 
